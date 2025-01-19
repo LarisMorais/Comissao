@@ -1,15 +1,14 @@
 
-<!-- # Teste comissao
+ # Teste comissao
 
- - abrir os 6 arquivos em excel
-- para cada arquivo:
-. verificar se algum valor na coluna vendas daquele arquivo é maior que 55.000
-. se for maior que 55000 -> envia um SMS com o nome, o mês e as vendas do vendedor
-. caso nao seja maior do que 55000 -> nao fazer nada
+ # abrir os 6 arquivos em excel para cada arquivo:
+ # verificar se algum valor na coluna vendas daquele arquivo é maior que 55.000
+ # se for maior que 55000 -> envia um SMS com o nome, o mês e as vendas do vendedor
+ # caso nao seja maior do que 55000 -> nao fazer nada
 
-obs.
-pandas e openpyxl (excel)
-twilio - (sms) --> 
+ #obs.
+ #pandas e openpyxl (excel)
+ #twilio - (sms)
 
 import pandas as pd
 from twilio.rest import Client
