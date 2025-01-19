@@ -21,7 +21,7 @@ lista_meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho'] #todo
 
 for mes in lista_meses:  #para cada mês dentro da lista, irá executar o codigo abaixo
   #print(mes)
-  tabela_vendas = pd.read_excel(f'/content/drive/MyDrive/Colab Notebooks/DADOS/{mes}.xlsx') #o 'f' significa que o texto será formatado, assim passando o mês em cada arquivo.
+  tabela_vendas = pd.read_excel(f'{mes}.xlsx') #o 'f' significa que o texto será formatado, assim passando o mês em cada arquivo.
   #print(tabela_vendas)
   if (tabela_vendas['Vendas'] > 55000).any():  #se na coluna vendas tiver algum(any:qualquer um) valor acima de 55000
       vendedor = tabela_vendas.loc[tabela_vendas['Vendas'] > 55000,'Vendedor'].values[0] #vai pegar o nome do vendedor alocado na linha onde o valor é maior que 55000. o values[0] retorna apenas o valor, e nao a tabela.
