@@ -1,5 +1,6 @@
 
-Projeto envio de SMS para o vendedor que ganhou comissão
+Projeto envio de SMS para o vendedor que ganhou comissão no mês, utilizando pandas, openpyxl (excel)
+e twilio para envio de sms
 
 Analisar 6 arquivos em excel com dados de vendas e vendedores e para cada arquivo:
 01. verificar se algum valor na coluna vendas daquele arquivo é maior que 55.000
